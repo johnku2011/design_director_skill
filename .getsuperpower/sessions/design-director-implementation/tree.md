@@ -120,3 +120,28 @@ Each commit records agent intent, changed files, stored copies, checks, and roll
 - files:
   - `design-director/references/research-components.md` file sha256=`7e081fb9dae31cc09a328cb3d5db4be2ef67c57b65a3ec4766bd096e7022860a` stored: `files/20260823T162950Z-8d974165/post/design-director/references/research-components.md`
   - `design-director/assets/DESIGN.template.md` file sha256=`26635325dc5a3f021763a52998d6d68b1b8ecc8243dd8541702058055bbc54a1` stored: `files/20260823T162950Z-8d974165/post/design-director/assets/DESIGN.template.md`
+
+## commit 20260823T163116Z-527d3437
+
+- phase: `pre`
+- time: `2026-08-23T16:31:16Z`
+- action: add implementation and governance modes
+- purpose: Apply approved design systems incrementally and audit or correct adherence safely
+- reason: The structural test remains red for the two missing Task 4 references
+- expected: Implementation preserves behavior and review produces evidence-linked read-only findings with scoped fixes
+- verify: Run both validators and inspect mode authorization boundaries
+- rollback: Remove the two new references
+- files:
+  - `design-director/references/implement-design.md` missing
+  - `design-director/references/review-and-fix.md` missing
+
+## commit 20260823T163116Z-527d3437
+
+- phase: `post`
+- time: `2026-08-23T16:32:16Z`
+- summary: Added behavior-preserving incremental implementation, read-only review, and scoped fix guidance
+- checks: validate-structure.sh passed; quick_validate.py passed; git diff --check passed
+- result: pass
+- files:
+  - `design-director/references/implement-design.md` file sha256=`b01022ecf5e87bb22e6a9b861f715e7d5ca6cf8e712e7dece357316ea7ac1ad0` stored: `files/20260823T163116Z-527d3437/post/design-director/references/implement-design.md`
+  - `design-director/references/review-and-fix.md` file sha256=`a0c3fe128cdd7c6d1fdb3841f9ebe04c75730d56725abf68169c7d3fc4e12659` stored: `files/20260823T163116Z-527d3437/post/design-director/references/review-and-fix.md`
