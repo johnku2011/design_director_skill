@@ -49,3 +49,49 @@ Each commit records agent intent, changed files, stored copies, checks, and roll
 - result: pass
 - files:
   - `tests/baseline-results.md` file sha256=`0aee90295107cb9b84068fa4c47cd8ee551df34d553a98db6e0b55dfd927f4db` stored: `files/20260823T162602Z-132d966a/post/tests/baseline-results.md`
+
+## commit 20260823T162644Z-cfd93e35
+
+- phase: `pre`
+- time: `2026-08-23T16:26:44Z`
+- action: create package structural test
+- purpose: Define deterministic Design Director package invariants before production files
+- reason: Task 2 requires a failing structural test before package initialization
+- expected: The validator fails because design-director/SKILL.md does not exist
+- verify: Run tests/validate-structure.sh and observe missing SKILL.md
+- rollback: Remove tests/validate-structure.sh
+- files:
+  - `tests/validate-structure.sh` missing
+
+## commit 20260823T162644Z-cfd93e35
+
+- phase: `post`
+- time: `2026-08-23T16:27:10Z`
+- summary: Added executable package validator and observed expected RED failure
+- checks: tests/validate-structure.sh -> missing: SKILL.md
+- result: expected-fail
+- files:
+  - `tests/validate-structure.sh` file sha256=`36cb5917904e7d8243122646d4f015990422f21d0a65179ad2b4e21f94aa7ba8` stored: `files/20260823T162644Z-cfd93e35/post/tests/validate-structure.sh`
+
+## commit 20260823T162710Z-643a4ac8
+
+- phase: `pre`
+- time: `2026-08-23T16:27:10Z`
+- action: initialize skill package
+- purpose: Create the minimal Design Director package structure and metadata
+- reason: The structural validator now fails for the missing production package
+- expected: Initializer creates SKILL.md, agents/openai.yaml, references, and assets directories
+- verify: Run quick_validate.py and inspect generated files before replacing scaffold content
+- rollback: Remove the new design-director directory
+- files:
+  - `design-director` missing
+
+## commit 20260823T162710Z-643a4ac8
+
+- phase: `post`
+- time: `2026-08-23T16:29:23Z`
+- summary: Initialized the skill and replaced scaffold content with the mode router, metadata, analysis audit, and three-direction contracts
+- checks: quick_validate.py -> Skill is valid; validate-structure.sh -> expected missing research reference
+- result: partial-pass
+- files:
+  - `design-director` directory size=192

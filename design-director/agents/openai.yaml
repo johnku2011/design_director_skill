@@ -1,0 +1,6 @@
+interface:
+  display_name: "Design Director"
+  short_description: "Give coding agents product-aware design direction"
+  default_prompt: "Use $design-director to analyze this product and recommend an intentional visual direction before implementation."
+policy:
+  allow_implicit_invocation: true
