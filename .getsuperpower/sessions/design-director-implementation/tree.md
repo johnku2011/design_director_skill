@@ -95,3 +95,28 @@ Each commit records agent intent, changed files, stored copies, checks, and roll
 - result: partial-pass
 - files:
   - `design-director` directory size=192
+
+## commit 20260823T162950Z-8d974165
+
+- phase: `pre`
+- time: `2026-08-23T16:29:50Z`
+- action: add research and design-system contract
+- purpose: Turn a selected direction into attributable component decisions and a persistent DESIGN.md
+- reason: The structural test is red for the missing Task 3 resources
+- expected: Research decomposes pages, ranks candidates, and feeds a complete product-proportional template
+- verify: Run structural and official validators; inspect source attribution and template coverage
+- rollback: Remove the two new files
+- files:
+  - `design-director/references/research-components.md` missing
+  - `design-director/assets/DESIGN.template.md` missing
+
+## commit 20260823T162950Z-8d974165
+
+- phase: `post`
+- time: `2026-08-23T16:30:51Z`
+- summary: Added provider-neutral component research guidance and the persistent design-system template
+- checks: quick_validate.py passed; structural test has expected Task 4 missing-file failure
+- result: partial-pass
+- files:
+  - `design-director/references/research-components.md` file sha256=`7e081fb9dae31cc09a328cb3d5db4be2ef67c57b65a3ec4766bd096e7022860a` stored: `files/20260823T162950Z-8d974165/post/design-director/references/research-components.md`
+  - `design-director/assets/DESIGN.template.md` file sha256=`26635325dc5a3f021763a52998d6d68b1b8ecc8243dd8541702058055bbc54a1` stored: `files/20260823T162950Z-8d974165/post/design-director/assets/DESIGN.template.md`
