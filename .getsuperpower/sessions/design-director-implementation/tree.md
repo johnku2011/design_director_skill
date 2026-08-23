@@ -145,3 +145,26 @@ Each commit records agent intent, changed files, stored copies, checks, and roll
 - files:
   - `design-director/references/implement-design.md` file sha256=`b01022ecf5e87bb22e6a9b861f715e7d5ca6cf8e712e7dece357316ea7ac1ad0` stored: `files/20260823T163116Z-527d3437/post/design-director/references/implement-design.md`
   - `design-director/references/review-and-fix.md` file sha256=`a0c3fe128cdd7c6d1fdb3841f9ebe04c75730d56725abf68169c7d3fc4e12659` stored: `files/20260823T163116Z-527d3437/post/design-director/references/review-and-fix.md`
+
+## commit 20260823T163659Z-6b3b2d57
+
+- phase: `pre`
+- time: `2026-08-23T16:36:59Z`
+- action: record forward-test results
+- purpose: Preserve independent evidence that the completed skill changes behavior and differentiates product directions
+- reason: All eight fresh-context post-skill scenarios have completed
+- expected: Results cover gate behavior, product specificity, evidence handling, and cross-product distinctiveness
+- verify: Review each DD-01 through DD-08 result and the seven-axis comparison table
+- rollback: Remove tests/skill-results.md
+- files:
+  - `tests/skill-results.md` missing
+
+## commit 20260823T163659Z-6b3b2d57
+
+- phase: `post`
+- time: `2026-08-23T16:37:43Z`
+- summary: Recorded eight passing independent behavioral evaluations and a seven-axis cross-product comparison
+- checks: Reviewed DD-01 through DD-08 outputs; no demonstrated correction required
+- result: pass
+- files:
+  - `tests/skill-results.md` file sha256=`036a7c80811be323f8a5d0de7889307e85d36dbd2f0c67980c58b1f9ce3d0a6b` stored: `files/20260823T163659Z-6b3b2d57/post/tests/skill-results.md`
