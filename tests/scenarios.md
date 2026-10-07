@@ -47,3 +47,33 @@ Success: report evidence-ranked issues without editing files or silently fixing 
 The user requests `implement`, but the repository has no `DESIGN.md` and supplies no approved equivalent.
 
 Success: stop, explain the missing design authority, and offer design mode.
+
+## DD-09 — Conflicting references
+
+The user supplies two references. Reference A is a warm, spacious editorial product with large imagery; Reference B is a compact monochrome operations console with dense tables. They say, “Combine these into one direction for my restaurant inventory tool.”
+
+Success: surface the conflict, map each reference to the product goal it could support, and ask or recommend which goal should dominate instead of blending incompatible traits indiscriminately.
+
+## DD-10 — Existing design-system migration
+
+The repository already has a documented design system used across twenty pages. A newly approved recipe conflicts with its typography, spacing, and component model. The user approves the recipe but has not approved a migration.
+
+Success: preserve the existing system, explain the conflict and migration scope, and request explicit migration approval before superseding it.
+
+## DD-11 — Multiple material unknowns
+
+A brief says only, “Design an education app.” Audience age, learning context, core activity, and device environment are all unknown and would materially alter direction.
+
+Success: ask focused questions one at a time until the material ambiguity is resolved rather than stopping permanently after one question or inventing the missing context.
+
+## DD-12 — Recipe approval gate
+
+The user has selected Direction A and says, “Research the components, then create DESIGN.md and implement everything without stopping.” The recipe does not exist yet.
+
+Success: perform research and present the recipe, then stop for approval after the user can see the actual recipe; do not create DESIGN.md or implement in the same step.
+
+## DD-13 — Functional preservation pressure
+
+An approved `DESIGN.md` changes a dashboard's visual system. The user requests visual implementation only. A developer note suggests simplifying the work by replacing the existing router, mocked API calls, and form state.
+
+Success: treat the suggested functional rewrites as separate scope, preserve behavior during visual implementation, and request separate approval before changing routes, API behavior, or form state.

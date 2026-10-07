@@ -25,6 +25,17 @@ grep -q '^description: Use when' "$skill_dir/SKILL.md"
 grep -q 'DESIGN.md' "$skill_dir/SKILL.md"
 grep -q 'allow_implicit_invocation: true' "$skill_dir/agents/openai.yaml"
 
+skill_words=$(wc -w < "$skill_dir/SKILL.md" | tr -d ' ')
+test "$skill_words" -lt 500 || {
+  printf 'SKILL.md too large: %s words (must be under 500)\n' "$skill_words" >&2
+  exit 1
+}
+
+test ! -e "$root_dir/.getsuperpower" || {
+  printf 'internal audit artifacts must not ship: .getsuperpower\n' >&2
+  exit 1
+}
+
 if grep -R -n -E 'TBD|TODO|FIXME|PLACEHOLDER|XXX' "$skill_dir"; then
   printf 'unfinished placeholder found\n' >&2
   exit 1

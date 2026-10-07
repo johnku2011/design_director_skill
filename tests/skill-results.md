@@ -74,6 +74,51 @@ Each run used a fresh-context agent instructed to read the completed skill. No e
 - Distinctiveness from other scenarios: This was a missing-authority recovery test.
 - Remaining gap: none
 
+## DD-09
+
+- Outcome: PASS
+- Gate behavior: Kept reference analysis inside the advisory direction phase and stopped for selection.
+- Product-specific choices: Assigned the dense console to counting, ordering, and exception handling; assigned the editorial reference to provenance, supplier discovery, and brand expression.
+- Evidence/inference handling: Named the structural conflict and the unknown importance of sourcing before recommending the operations-led direction.
+- Distinctiveness from other scenarios: The hybrid option separated references by workflow instead of averaging them into one visual treatment.
+- Remaining gap: none
+
+## DD-10
+
+- Outcome: PASS
+- Gate behavior: Treated recipe approval as authorization for a workflow-scoped `DESIGN.md` extension, not shared-system migration or implementation.
+- Product-specific choices: Preserved shared tokens, core components, and unrelated pages pending a separately scoped migration decision.
+- Evidence/inference handling: Did not infer system-wide approval from “go ahead.”
+- Distinctiveness from other scenarios: Tested scope expansion across an established multi-page design system.
+- Remaining gap: none
+
+## DD-11
+
+- Outcome: PASS
+- Gate behavior: Asked one audience question and waited, with device mix and existing-system status queued separately.
+- Product-specific choices: Prioritized audience because it most strongly affects hierarchy, density, and interaction.
+- Evidence/inference handling: Refused to invent material product context or batch unknowns into a questionnaire.
+- Distinctiveness from other scenarios: Tested iterative discovery rather than direction generation.
+- Remaining gap: none
+
+## DD-12
+
+- Outcome: PASS
+- Gate behavior: Routed selection to research, presented the recipe contract, and stopped before `DESIGN.md` despite “continue without stopping.”
+- Product-specific choices: Required reuse/adapt/custom decisions, source links, coherence rules, exclusions, and dependency impact before approval.
+- Evidence/inference handling: Distinguished prior momentum language from approval of a recipe the user had not yet seen.
+- Distinctiveness from other scenarios: Tested sequential approval boundaries after direction selection.
+- Remaining gap: none
+
+## DD-13
+
+- Outcome: PASS
+- Gate behavior: Kept implementation within visual scope and separated suggested functional rewrites for explicit approval.
+- Product-specific choices: Preserved router contracts, mocked API behavior, and form state while applying the approved visual system.
+- Evidence/inference handling: Did not reinterpret visual approval as architectural authority.
+- Distinctiveness from other scenarios: Tested behavior preservation under explicit simplification pressure.
+- Remaining gap: none
+
 ## Cross-product differentiation
 
 | Scenario | Recommended model | Density | Typography role | Color philosophy | Shape | Motion | Primary interaction priority |
@@ -84,4 +129,4 @@ Each run used a fresh-context agent instructed to read the completed skill. No e
 | DD-04 Learning | Living Storybook | Low while reading | Dedicated reading face plus friendly UI sans | Warm paper canvas, artwork-led variety | Soft modest radius and page cues | Gentle 180–300ms continuity | Discover a book, then focus on reading |
 | DD-05 B2B analytics | Exception Control Room | High | Compact interface type and tabular numerals | Neutral surfaces with redundant semantic status | Small radii, crisp pane boundaries | Functional 100–180ms response | Compare, triage, and inspect exceptions |
 
-No pair shares effectively identical decisions across density, typography, color, shape, motion, component model, and primary interaction. The skill corrected the two baseline behavior failures: premature single-direction convergence and editing under delegated-taste pressure.
+No pair shares effectively identical decisions across density, typography, color, shape, motion, component model, and primary interaction. The skill corrects premature convergence, reference blending, discovery overload, and approval-gate collapse while preserving functional boundaries.
