@@ -14,6 +14,8 @@ Start with high-signal material and stop when additional scanning no longer chan
 
 Inspect repository status before any later write phase and preserve unrelated work. Do not infer the rendered appearance from component names alone when source styles or screenshots can resolve it.
 
+When user references conflict, do not average them into a vague blend. State the conflict, map each reference to the product goal it best serves, and choose which principle governs each layer or flow. Explain what is retained, rejected, or subordinated and why.
+
 ## Evidence model
 
 Classify important claims:
@@ -24,7 +26,7 @@ Classify important claims:
 | Inferred | A reasonable interpretation with named evidence | “The terse copy and shortcut map suggest expert users.” |
 | Unknown | Evidence is insufficient and the answer could alter direction | “Brand should feel playful” is unknown without audience or positioning evidence. |
 
-Ask one focused question only when an unknown would materially change the directions. Otherwise continue and label confidence.
+When unknowns would materially change the directions, ask focused questions one at a time until the ambiguity is resolved. Do not batch questions. Otherwise continue and label confidence.
 
 ## Product model
 

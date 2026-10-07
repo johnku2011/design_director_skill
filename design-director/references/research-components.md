@@ -21,18 +21,9 @@ Search separately for the components that carry the selected direction. “Dashb
 
 Retrieve multiple candidates for high-impact components. Low-impact primitives can reuse the project's existing system without catalog research.
 
-## Design source abstraction
+## Design sources
 
-Treat sources through this conceptual interface even when browsing manually:
-
-```text
-DesignSource.search(query)
-DesignSource.getComponent(id)
-DesignSource.getMetadata(id)
-DesignSource.getPreview(id)
-```
-
-Use 21st.dev as the preferred MVP discovery source. The interface remains provider-neutral so the project can also use its existing components, an organization design system, official component-library documentation, user references, or custom work.
+Use 21st.dev as the preferred MVP discovery source, while remaining provider-neutral: also consider existing components, an organization design system, official component-library documentation, user references, or custom work.
 
 When internet access is available, open direct component or official documentation pages and retain their links. Do not cite search-result pages. When a source cannot be reached, disclose the limitation and continue with repository evidence or custom design rather than inventing candidates.
 
@@ -99,4 +90,6 @@ Include direct source links where applicable, plus:
 
 End with approval choices: approve the recipe, preview or explain it, or rethink the direction. Stop before writing `DESIGN.md`.
 
-After explicit approval, use [DESIGN.template.md](../assets/DESIGN.template.md) to create or update the repository's `DESIGN.md`. Replace all template guidance with evidence-backed, implementation-ready decisions. Preserve useful existing design rules unless the approved recipe supersedes them.
+After explicit approval, use [DESIGN.template.md](../assets/DESIGN.template.md) to create or update the repository's `DESIGN.md`. Replace all template guidance with evidence-backed, implementation-ready decisions.
+
+Preserve an existing shared design system by default. A recipe may define a scoped extension, but ordinary recipe approval does not authorize migrating shared tokens, core components, or other pages. Identify conflicts and migration scope, then request separate explicit migration approval before changing them.
