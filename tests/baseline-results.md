@@ -52,11 +52,11 @@ These runs used fresh-context agents without access to the future `design-direct
 
 ## DD-07
 
-- Outcome: PASS WITH FIXTURE LIMITATION
-- Material decision: The agent kept the requested review read-only and asked for the missing local artifacts rather than inventing findings.
-- Evidence: “I would report issues only—not modify the UI without an explicit request.”
-- Failure class: none for authorization; the isolated evaluator could not see the hypothetical repository artifact
-- Skill requirement: Preserve review-only behavior and require evidence-linked findings from an available `DESIGN.md` and implementation.
+- Outcome: PASS
+- Material decision: The agent ranked the supplied gradient and accent violations above radius and motion drift, kept the review read-only, and limited its claims to the fixture.
+- Evidence: “No files were edited and no silent fixes were applied.”
+- Failure class: none
+- Skill requirement: Preserve read-only, evidence-limited behavior while formalizing the complete finding contract.
 
 ## DD-08
 
@@ -106,6 +106,15 @@ These runs used fresh-context agents without access to the future `design-direct
 - Failure class: none
 - Skill requirement: Preserve this functional boundary during visual implementation.
 
+## DD-14
+
+- No-skill control: PASS
+- Existing-skill outcome: FAIL
+- Material decision: Natural behavior treated extraction as documentation, but the existing skill had no Extract route and mandated three redesign directions before `DESIGN.md`.
+- Evidence: “`/design extract` falls through to default Design mode.”
+- Failure class: routing regression and wrong output shape
+- Skill requirement: Add a distinct extraction workflow that separates repeated rules from outliers and gates the resulting design authority without redesigning the product.
+
 ## Failure Patterns
 
 1. Good design judgment naturally converges too early on a single direction.
@@ -114,3 +123,4 @@ These runs used fresh-context agents without access to the future `design-direct
 4. Review-only behavior should be preserved with a positive read-only report contract rather than additional prohibitions.
 5. Conflicting references are naturally blended unless the workflow requires explicit conflict resolution.
 6. Multiple unknowns and momentum language both pressure agents to collapse deliberate approval gates.
+7. A mandatory redesign workflow can override a valid documentation-only extraction request even when unskilled behavior handles it correctly.
