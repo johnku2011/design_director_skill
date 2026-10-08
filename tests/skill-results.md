@@ -119,6 +119,15 @@ Each run used a fresh-context agent instructed to read the completed skill. No e
 - Distinctiveness from other scenarios: Tested behavior preservation under explicit simplification pressure.
 - Remaining gap: none
 
+## DD-14
+
+- Outcome: PASS
+- Gate behavior: Entered Extract mode, presented a non-authoritative baseline, and stopped for approval before writing `DESIGN.md`.
+- Product-specific choices: Identified 8px as the candidate button radius and 4/8/12/16/24 as the candidate spacing scale while keeping the isolated 20px radius and one-off spacing values outside the canonical system.
+- Evidence/inference handling: Used rendered evidence when available plus source evidence, confidence labels, coverage limits, and explicit classification as candidate rule, intentional exception, unresolved outlier, or unknown.
+- Distinctiveness from other scenarios: Documented the mature interface without generating directions, researching components, redesigning, or normalizing the UI.
+- Remaining gap: none
+
 ## Cross-product differentiation
 
 | Scenario | Recommended model | Density | Typography role | Color philosophy | Shape | Motion | Primary interaction priority |
@@ -129,4 +138,4 @@ Each run used a fresh-context agent instructed to read the completed skill. No e
 | DD-04 Learning | Living Storybook | Low while reading | Dedicated reading face plus friendly UI sans | Warm paper canvas, artwork-led variety | Soft modest radius and page cues | Gentle 180–300ms continuity | Discover a book, then focus on reading |
 | DD-05 B2B analytics | Exception Control Room | High | Compact interface type and tabular numerals | Neutral surfaces with redundant semantic status | Small radii, crisp pane boundaries | Functional 100–180ms response | Compare, triage, and inspect exceptions |
 
-No pair shares effectively identical decisions across density, typography, color, shape, motion, component model, and primary interaction. The skill corrects premature convergence, reference blending, discovery overload, and approval-gate collapse while preserving functional boundaries.
+No pair shares effectively identical decisions across density, typography, color, shape, motion, component model, and primary interaction. The skill corrects premature convergence, reference blending, discovery overload, approval-gate collapse, and extraction misrouting while preserving functional boundaries.

@@ -38,7 +38,7 @@ Success: analyze and present directions without modifying UI, then stop for sele
 
 ## DD-07 — Review-only pressure
 
-The repository has `DESIGN.md`. The user requests only a design review.
+The repository has `DESIGN.md`, which forbids gradients, defines 20px card radius, limits accents to one semantic color, and caps interface motion at 180ms. The implementation contains a dashboard gradient, 12px and 16px card radii, three undeclared accent colors, and a 300ms settings transition. The user requests only a design review.
 
 Success: report evidence-ranked issues without editing files or silently fixing them.
 
@@ -77,3 +77,9 @@ Success: perform research and present the recipe, then stop for approval after t
 An approved `DESIGN.md` changes a dashboard's visual system. The user requests visual implementation only. A developer note suggests simplifying the work by replacing the existing router, mocked API calls, and form state.
 
 Success: treat the suggested functional rewrites as separate scope, preserve behavior during visual implementation, and request separate approval before changing routes, API behavior, or form state.
+
+## DD-14 — Extract an existing design system
+
+A mature application has a coherent UI but no `DESIGN.md`. Most buttons use an 8px radius while one settings button uses 20px. Spacing usually follows 4/8/12/16/24 with several one-off values. The user says: “`/design extract` — capture the current system into `DESIGN.md` exactly as it is; do not redesign anything.”
+
+Success: do not generate directions. Derive candidate canonical rules from repeated evidence, preserve intentional product character, inventory outliers without promoting them into the system, label uncertainty, and present the extracted baseline for approval before writing `DESIGN.md`. UI normalization or implementation remains separate scope.

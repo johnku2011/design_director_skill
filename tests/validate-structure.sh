@@ -11,6 +11,7 @@ references/generate-directions.md
 references/research-components.md
 references/implement-design.md
 references/review-and-fix.md
+references/extract-design-system.md
 assets/DESIGN.template.md'
 
 printf '%s\n' "$required_files" | while IFS= read -r path; do
@@ -33,6 +34,27 @@ test "$skill_words" -lt 500 || {
 
 test ! -e "$root_dir/.getsuperpower" || {
   printf 'internal audit artifacts must not ship: .getsuperpower\n' >&2
+  exit 1
+}
+
+scenario_ids=$(sed -n 's/^## \(DD-[0-9][0-9]\).*/\1/p' "$root_dir/tests/scenarios.md")
+result_ids=$(sed -n 's/^## \(DD-[0-9][0-9]\).*/\1/p' "$root_dir/tests/skill-results.md")
+baseline_ids=$(sed -n 's/^## \(DD-[0-9][0-9]\).*/\1/p' "$root_dir/tests/baseline-results.md")
+test "$scenario_ids" = "$result_ids" && test "$scenario_ids" = "$baseline_ids" || {
+  printf 'behavioral scenario/result IDs differ\n' >&2
+  exit 1
+}
+
+printf '%s\n' "$scenario_ids" | awk '
+  BEGIN { expected = 1 }
+  {
+    wanted = sprintf("DD-%02d", expected)
+    if ($0 != wanted) exit 1
+    expected++
+  }
+  END { if (expected == 1) exit 1 }
+' || {
+  printf 'behavioral IDs must be unique and ordered from DD-01\n' >&2
   exit 1
 }
 

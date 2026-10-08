@@ -16,7 +16,7 @@
 
 ## Design Direction
 
-<!-- Name the approved direction and summarize its thesis, visual language, and deliberately rejected alternatives. -->
+<!-- Name the approved direction or extracted baseline. Summarize its thesis, visual language, provenance, and deliberately rejected alternatives or excluded outliers. -->
 
 ## Design Principles
 
